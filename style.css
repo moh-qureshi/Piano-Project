@@ -1,13 +1,42 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 100%;
     box-sizing: border-box;
+    background-image: url(/background.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title{
+    position: relative;
+    left: 35%;
+    top: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    background-color: purple;
+    opacity: 0.6;
+    padding: 20px 0 20px 0;
+}
+
+#virtual-piano-text h1{
+    filter: none;
+    font-size: 60px;
+    margin: auto;
+}
+
+
+#showkeys-buttons h1{
+    font-size: 20px;
 }
 
 #piano{
     position: relative;
     margin-top: 300px;
-    bottom: 250px;
+    bottom: 400px;
     height: 500px;
     align-items: center;
     background-image: url(/pianokeys.jpg);
@@ -30,7 +59,17 @@ button{
     width: 62px;
 }
 
+.pianokey-text{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
 
+.pianokeyblack-text{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 button:active{
     border-top: 5px solid black;
@@ -133,6 +172,6 @@ button:active{
 }
 
 #piano-bottom img{
-    width: 1300px;
+    width: 1260px;
     margin-left: 40px;
 }
